@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice Cart Jiro</title>
+	<script src="js/cart.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form>
+		Product Name:
+		<input type="text" name="productname" id="productId">
+		<br>
+		<br>
+		Color:
+		<select name="color_select" id="colorId">
+			<option name="color_option" value="red">Red</option>
+			<option name="color_option" value="black">Black</option>
+			<option name="color_option" value="white">White</option>
+		</select>
+		<br>
+		<br>
+		Size:
+		<select name="size_select" id="sizeId">
+			<option name="size_option" value="s">S</option>
+			<option name="size_option" value="m">M</option>
+			<option name="size_option" value="l">L</option>
+		</select>
+		<br>
+		<br>
+		Quantity:
+		<select name="quantity_select" id="quaId">
+			<option name="quantity_option" value="1">1</option>
+			<option name="quantity_option" value="2">2</option>
+			<option name="quantity_option" value="3">3</option>
+			<option name="quantity_option" value="4">4</option>
+			<option name="quantity_option" value="5">5</option>
+			<option name="quantity_option" value="6">6</option>
+			<option name="quantity_option" value="7">7</option>
+			<option name="quantity_option" value="8">8</option>
+			<option name="quantity_option" value="9">9</option>
+			<option name="quantity_option" value="10">10</option>
+		</select>
+		<br>
+		<br>
+		<input type="radio" name="sex" value="male">Male<br>
+		<input type="radio" name="sex" value="female">Female<br>
+		<br>
+		<input type="button" name="submit" value="Add to Cart" onclick="addToCart()">
+		<div id="product_list"></div>
+	</form>
+</body>
+</html>
